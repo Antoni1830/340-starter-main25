@@ -6,26 +6,26 @@
   font-family: var(--inter);
 }
 
-/* --------------- ROOT --------------- */
+/**/
 :root {
-  /* font type */
+
   --inter: "Inter", serif;
 
-  /* font size */
+
   --title-size: 20px;
   --content-size: 14px;
 
-  /* font weight */
+
   --title-weight: 600;
   --content-weight: 400;
 
-  /* color scheme */
+  --border-color: #90949C;
   --main-color: #01B0D3;
   --content-color: #242332;
-  --border-color: #90949C;
+
 }
 
-/* --------------- HEADER --------------- */
+/* ------------------ -------------------------------------------- */
 #header {
   width: 100%;
   display: flex;
@@ -34,14 +34,14 @@
   justify-content: space-between;
   padding: 20px 0;
 }
-/* site name */
+
 #siteName a {
   font-size: 28px;
   font-weight: var(--title-weight);
   text-decoration-line: none;
   color: var(--content-color);
 }
-/* my account link */
+
 #tools a {
   font-size: var(--content-size);
   font-weight: var(--content-weight);
@@ -49,12 +49,11 @@
   color: var(--content-color);
 }
 
-/* --------------- NAVIGATION --------------- */
+
 #nav {
   width: 100%;
   background-color: var(--content-color);
 }
-/* list */
 #navList {
   list-style: none;
   padding: 0;
@@ -63,13 +62,13 @@
   justify-content: space-between;
   padding: 16px;
 }
-/* items */
+
 .navItems {
   color: #fff;
   font-size: var(--content-size);
   font-weight: var(--content-weight);
 }
-/* links */
+
 .navLinks {
   color: #fff;
   text-decoration-line: none;
@@ -78,8 +77,8 @@
   text-decoration-line: underline;
 }
 
-/* --------------- MAIN - INDEX --------------- */
-/* banner section */
+
+
 #banner {
   width: 100%;
   margin: 30px 0 50px 0;
@@ -110,7 +109,6 @@
   font-weight: var(--content-weight);
   margin: 2px 0;
 }
-/* reviews section */
 #reviews {
   width: 100%;
   margin: 40px 0;
@@ -162,7 +160,7 @@
   height: auto;
 }
 
-/* --------------- INVENTORY --------------- */
+
 #invTitle {
   font-size: var(--title-size);
   font-weight: var(--title-weight);
@@ -210,7 +208,7 @@
   font-weight: var(--content-weight);
 }
 
-/* --------------- DETAILS --------------- */
+
 #detTitle {
   font-size: 20px;
   font-weight: var(--title-weight);
@@ -238,7 +236,7 @@
   font-weight: var(--content-weight);
 }
 
-/* --------------- FOOTER --------------- */
+
 #footer {
   width: 100%;
   padding: 20px 0;
@@ -255,13 +253,10 @@
   font-weight: var(--content-weight);
 }
 
-/*************** MEDIA QUERIES ***************/
+/* MEDIA QUERIES */
 @media (min-width: 700px) {
   /* ROOT */
-  :root {
-    --title-size: 24px;
-    --content-size: 16px;
-  }
+  
 
   /* HTML */
   html {
@@ -278,14 +273,14 @@
     padding: 10px;
   }
 
-  /* HEADER */
+
   #siteName a {
-    font-size: 32px;
+    font-size: 35px;
   }
 
-  /* NAVIGATION */
+
   #navList {
-    padding: 16px 100px;
+    padding: 16px 80px;
   }
 
   /* BANNER */
@@ -310,7 +305,7 @@
     margin: 20px 0;
   }
 
-  /* SECTIONS */
+ 
   #sectionsWrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -335,7 +330,7 @@
     grid-row-end: 2;
   }
 
-  /* INVENTORY */
+  
   #invTitle {
     font-size: 28px;
   }
@@ -343,7 +338,7 @@
     width: 95%;
   }
 
-  /* DETAILS */
+ 
   #detTitle {
     font-size: 28px;
   }
